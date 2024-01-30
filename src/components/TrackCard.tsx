@@ -1,4 +1,8 @@
-const TrackCard = ({ number }: number | string) => {
+interface TrackCardProps {
+  number: number;
+}
+
+const TrackCard: React.FC<TrackCardProps> = ({ number }) => {
   console.log(number, "number passed as prop");
   return (
     <div

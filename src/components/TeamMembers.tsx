@@ -1,7 +1,16 @@
 import TeamButton from "./Buttons/TeamButton";
 import UnderlineButton from "./Buttons/UnderlineButton";
 import { useState } from "react";
-const TeamMembers = ({ people }) => {
+
+interface Person {
+  name: string;
+  imageUrl: string;
+}
+
+interface TeamMembersProps {
+  people: Person[];
+}
+const TeamMembers: React.FC<TeamMembersProps> = ({ people }) => {
   const [selectedMember, setSelectedMember] = useState<number | null>(null);
 
   const handleMemberClick = (index: number | null) => {
