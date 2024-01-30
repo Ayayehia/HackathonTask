@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { BellIcon } from "@heroicons/react/24/outline";
+import Avatar from "../assets/avatar.png";
 
 function classNames(...classes: (string | undefined | null | false)[]): string {
   return classes.filter(Boolean).join(" ");
@@ -49,11 +50,7 @@ const Header = () => {
             <Menu.Button className="  mr-10 relative flex rounded-full bg-[#2B2638] text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
               <span className="absolute -inset-1.5" />
               <span className="sr-only">Open user menu</span>
-              <img
-                className="h-8 w-8 rounded-full"
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt=""
-              />
+              <img className="h-8 w-8 rounded-full" src={Avatar} alt="" />
             </Menu.Button>
           </div>
           <Transition
