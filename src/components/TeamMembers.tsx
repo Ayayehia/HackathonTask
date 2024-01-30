@@ -36,7 +36,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({ people }) => {
                   <div>
                     <h3
                       className={`text-base font-semibold cursor-pointer text-white ${
-                        selectedMember === index ? "text-[#00FF95]" : ""
+                        selectedMember === index && "text-[#00FF95]"
                       }`}
                       onClick={() => handleMemberClick(index)}
                     >
