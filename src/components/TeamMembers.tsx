@@ -35,7 +35,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({ people }) => {
                 <span className="flex justify-between w-full">
                   <div>
                     <h3
-                      className={`text-base font-semibold  text-white ${
+                      className={`text-base font-semibold cursor-pointer text-white ${
                         selectedMember === index ? "text-[#00FF95]" : ""
                       }`}
                       onClick={() => handleMemberClick(index)}
