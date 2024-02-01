@@ -30,7 +30,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({ people }) => {
                 <img
                   className="h-16 w-16 rounded-full"
                   src={person.imageUrl}
-                  alt=""
+                  alt="image of team member"
                 />
                 <span className="flex justify-between w-full">
                   <div>
